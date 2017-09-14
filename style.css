@@ -6,7 +6,9 @@ html {
   margin: 0px;
   text-align: center;
 }
-
+h2, h4, h5 {
+  margin: 20px;
+}
 .head {
   height: 69px;
   padding: 0 10px;
@@ -22,17 +24,21 @@ html {
   height: 50px;
 }
 
-.banner {
-  background-image: url(https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-4/img-mission-background.jpg);
-  width: 1200px;
-  height: 700px;
-  margin: 0 auto;
-  
-}
-
 .navigation span {
   margin-left: 30px;
   text-decoration: underline;
+}
+
+.container {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.banner {
+  background-image: url(https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-4/img-mission-background.jpg);
+  margin-bottom: 40px;
+  height: 700px;
+  
 }
 
 .mission {
@@ -56,22 +62,31 @@ html {
 
 .locations {
   background-image: url(https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-4/img-locations-background.jpg);
-  width: 1000px;
+  margin-top: 40px;
   height: 500px;
-  margin: 0 auto;
+  padding-top: 70px;
+  
+  
 }
 
 .shop {
   background-color: black;
   width: 300px;
-  padding: 15px 20px;
+  margin: 15px 0px 15px 20px;
+  z-index: 10;
 }
 
 .footer {
   height: 200px;
+  padding-top: 20px;
 }
 
+.copyright {
+  text-align: left;
+  padding: 20px;
+}
 /*flex styling*/
+
 
 .head {
   display: flex;
@@ -91,6 +106,8 @@ html {
   margin-right: 40px;
 }
 
+
+
 .banner {
   display: flex;
   flex-direction: column;
@@ -105,14 +122,28 @@ html {
   flex-wrap: wrap;
 }
 
+
 .locations {
   display: flex;
   justify-content: center;
-  align-content: center;
+ flex-wrap: wrap;
+}
+.title {
+  display: block;
+  text-align: center;
 }
 
 .shop {
   display: flex;
+  align-self: center;
   flex-direction: column;
   flex-wrap: wrap;
+}
+
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+
 }
