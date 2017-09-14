@@ -68,7 +68,10 @@ h2, h4, h5 {
   background-image: url(https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-4/img-locations-background.jpg);
   margin-top: 40px;
   height: 500px;
-  padding-top: 70px;
+}
+
+.row {
+  height: 200px;
 }
 
 .shop {
@@ -129,12 +132,19 @@ h2, h4, h5 {
 .locations {
   display: flex;
   justify-content: center;
+  /* align-items: center; */
   flex-wrap: wrap;
+}
+
+.locations h2 {
+  align-self: center;
 }
 
 .row{
 display: flex;
-justify-content: space-between;
+width: 100%;
+justify-content: space-around;
+
 }
 
 .shop {
