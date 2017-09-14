@@ -9,6 +9,14 @@ html {
 h2, h4, h5 {
   margin: 20px;
 }
+
+.head, .mission, .shop {
+  background-color: black; 
+}
+
+
+/*nav*/
+
 .head {
   height: 69px;
   padding: 0 10px;
@@ -17,7 +25,6 @@ h2, h4, h5 {
   width: 100%;
   top: 0px;
   z-index: 10;
-  background-color: black;
 }
 
 .logo img {
@@ -29,6 +36,8 @@ h2, h4, h5 {
   text-decoration: underline;
 }
 
+/* main body*/
+
 .container {
   width: 1200px;
   margin: 0 auto;
@@ -38,11 +47,6 @@ h2, h4, h5 {
   background-image: url(https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-4/img-mission-background.jpg);
   margin-bottom: 40px;
   height: 700px;
-  
-}
-
-.mission {
-  background-color: black; 
 }
 
 .feature, .intro {
@@ -65,16 +69,15 @@ h2, h4, h5 {
   margin-top: 40px;
   height: 500px;
   padding-top: 70px;
-  
-  
 }
 
 .shop {
-  background-color: black;
   width: 300px;
   margin: 15px 0px 15px 20px;
   z-index: 10;
 }
+
+/*footer*/
 
 .footer {
   height: 200px;
@@ -85,8 +88,10 @@ h2, h4, h5 {
   text-align: left;
   padding: 20px;
 }
-/*flex styling*/
 
+
+
+/*flexbox styling*/
 
 .head {
   display: flex;
@@ -106,8 +111,6 @@ h2, h4, h5 {
   margin-right: 40px;
 }
 
-
-
 .banner {
   display: flex;
   flex-direction: column;
@@ -126,11 +129,12 @@ h2, h4, h5 {
 .locations {
   display: flex;
   justify-content: center;
- flex-wrap: wrap;
+  flex-wrap: wrap;
 }
-.title {
-  display: block;
-  text-align: center;
+
+.row{
+display: flex;
+justify-content: space-between;
 }
 
 .shop {
@@ -139,7 +143,6 @@ h2, h4, h5 {
   flex-direction: column;
   flex-wrap: wrap;
 }
-
 
 .footer {
   display: flex;
